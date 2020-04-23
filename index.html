@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js-functions/functions.js">
+    </script>
+</head>
+<body>
+<h1>Bolyukh Iryna<br>Group 3<br>1 variant</h1>
+<h2>1.Task. Copying</h2>
+<form>
+    S:  <input id="s" type="text" name="s"><br>
+    S1:<input id="s1" type="text" name="s1"><br>
+    N:  <input id="n" type="number" name="n" min="0"><br>
+    <button type="button" onclick="copy(document.getElementById('s').value,
+                                        document.getElementById('s1').value,
+                                        45,
+                                        'ffrrg',
+                                        document.getElementById('n').value)">
+        Copy</button>
+    <p id="task1">ANSWER</p>
+</form>
+<hr>
+<h2>2.Task. Factorial</h2>
+<form>
+    Integer:  <input id="int" type="number" name="int" min="0"><br>
+    <button type="button" onclick="factorial(document.getElementById('int').value)">
+        Calculate</button>
+    <p id="task2">ANSWER</p>
+</form>
+<hr>
+<h2>3.Task. Cosine using Taylor series</h2>
+<form>
+    X:  <input id="x" type="number" name="s"><br>
+    N:  <input id="num" type="number" name="num" min="0"><br>
+    <button type="button" onclick="cos_Taylor(document.getElementById('x').value,
+                                        document.getElementById('num').value)">
+        Calculate</button>
+    <p id="task3">ANSWER</p>
+</form>
+<hr>
+<h2>4.Task. Area of the Triangle</h2>
+<form>
+    a:  <input id="a" type="number" name="a" min="0"><br>
+    b:  <input id="b" type="number" name="b" min="0"><br>
+    <button type="button" onclick="tri_area(document.getElementById('a').value,
+                                        document.getElementById('b').value)">
+        Calculate</button>
+    <p id="task4">ANSWER</p>
+</form>
+<hr>
+<h2>5.Task. Students</h2>
+<form>
+    Faculty:
+    <select id="fac">
+        <option value="FI">FI</option>
+        <option value="FEN">FEN</option>
+        <option value="FGN">FGN</option>
+    </select><br>
+    <button type="button" onclick="faculty(document.getElementById('fac').value)">
+        Show students</button>
+    <p id="task5">ANSWER</p>
+</form>
+<hr>
+<form>
+    Faculty:
+    <select id="facul">
+        <option value="FI">FI</option>
+        <option value="FEN">FEN</option>
+        <option value="FGN">FGN</option>
+    </select><br>
+    Year:
+    <select id="year">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select><br>
+    <button type="button" onclick="faculty_year(document.getElementById('facul').value,
+                                                document.getElementById('year').value)">
+        Show students</button>
+    <p id="task6">ANSWER</p>
+</form>
+<hr>
+<form>
+    <!--Choose date:  <input id="birth_date" type="date" name="birth_date"><br>-->
+    Enter year:  <input id="birth_date" type="number" name="birth_date"><br>
+    <button type="button" onclick="get_student_byDate(document.getElementById('birth_date').value)">
+        Show students</button>
+    <p id="task7">ANSWER</p>
+</form>
+<hr>
+</body>
+</html>
