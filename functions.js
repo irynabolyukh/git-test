@@ -7,7 +7,7 @@ function copy(word1,word2,n) {
 }
 function factorial(n) {
     if (!(Number.isInteger(parseFloat(n)))) {
-        alert("N must be integer");
+        alert("N must be int");
         document.getElementById("task2").innerHTML = "Invalid input";
         return 0;
     }
